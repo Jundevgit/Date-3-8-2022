@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hoby.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>CodeGym</title>
+    <style>
+        .exciser {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .exciser h3 {
+            background-color: coral;
+            width: 390px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Ngày 2/8/2022</h1>
+        <h2>Bài tập [form] Tạo giao diện đăng ký người dùng</h2>
+    
+            <form action="/action_page" method="post">
+                <label for="fullname">Họ Và Tên:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value=""><br><br>
+    
+                <label for="">Phone:</label><br>
+                <input type="number" id="phone" name="phone" value=""><br><br>
+    
+            <form action="/action_page" method="post">
+                <p>Giới Tính:</p>
+                 <input type="radio" id="gender" name="gender" value="">
+                 <label for="gender">Nam</label><br>
+
+                 <input type="radio" id="gender" name="gender" value="">
+                 <label for="gender">Nữ</label><br>
+
+                 <input type="radio" id="gender" name="gender" value="">
+                 <label for="other">Khác</label><br><br>
+
+                 <input type="submit" value="Đăng Ký">
+    </section>
+    <section>
+    <center>
+        <h2>Bài tập [form] Tạo form đơn giản</h2> 
+    <div class="exciser">
+        <form action="">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <H3>SỞ THÍCH CỦA BẠN</H3>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="color:blue">Họ Và Tên</td>
+                    <td>
+                        <input type="text" style="width: 250px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:blue">Email</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:blue">Sở Thích</td>
+                    <td>
+                        <table style="color:coral">
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Thể Thao
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Âm Nhạc
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Đọc Sách
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Lướt Web
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Chơi Game
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Điện Ảnh
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Du Lịch
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button>Gửi Thông Tin</button>
+                        <button type="reset">Nhập Lại</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+    </div>
+</center>
+    </section>
+    <section>
+        <div class="register">
+            <h3>Đăng Ký Học Viên</h3>
+            <form action="/action_page" method="post">
+                <label class="register_label" for="fullname">Họ Và Tên</label>
+                <input class="register_input" type="text" id="name" name="name"><br><br>
+                <label class="register_label" for="">Ngày Sinh</label>
+                <input class="register_input" type="number" id="Birth" name="Birth"><br><br>
+
+            <form action="/action_page" method="post">
+                <span class="gender">Giới Tính</span>
+                 <input type="radio" id="gender" name="gender" value="">
+                 <label class="gender_select" for="gender">Nam</label>
+                 <input type="radio" id="gender" name="gender" value="">
+                 <label class="gender_select" for="gender">Nữ</label><br><br>
+                
+                 <label class="register_label label_address" for="address">Địa Chỉ</label>
+                 <input class="register_address" type="text" id="address" name="address">
+
+        </div>
+    </section>
+</body>
+</html>
